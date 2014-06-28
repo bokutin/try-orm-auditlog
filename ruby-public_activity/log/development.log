@@ -1,0 +1,884 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateSongs (20140627204727)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+Connecting to database specified by database.yml
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+Connecting to database specified by database.yml
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+Connecting to database specified by database.yml
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+Connecting to database specified by database.yml
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateSongs (20140627204727)
+Migrating to CreateUsers (20140627205310)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (2.3ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.7ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSongs (20140627204727)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateUsers (20140627205310)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (3.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSongs (20140627204727)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateUsers (20140627205310)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (3.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSongs (20140627204727)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateUsers (20140627205310)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.6ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSongs (20140627204727)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateUsers (20140627205310)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.7ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSongs (20140627204727)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateUsers (20140627205310)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSongs (20140627204727)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateUsers (20140627205310)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSongs (20140627204727)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateUsers (20140627205310)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSongs (20140627204727)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateUsers (20140627205310)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSongs (20140627204727)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateUsers (20140627205310)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSongs (20140627204727)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateUsers (20140627205310)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mUPDATE "songs" SET "title" = 'title1b', "updated_at" = '2014-06-27 21:02:28.450423' WHERE "songs"."id" = 1[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.6ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSongs (20140627204727)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateUsers (20140627205310)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mUPDATE "songs" SET "title" = 'title1b', "updated_at" = '2014-06-27 21:02:34.148587' WHERE "songs"."id" = 1[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSongs (20140627204727)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateUsers (20140627205310)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mUPDATE "songs" SET "title" = 'title1b', "updated_at" = '2014-06-27 21:03:16.739383' WHERE "songs"."id" = 1[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.6ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSongs (20140627204727)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (14.5ms)[0m  commit transaction
+Migrating to CreateUsers (20140627205310)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "songs" SET "title" = 'title1b', "updated_at" = '2014-06-27 21:08:18.284852' WHERE "songs"."id" = 1[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSongs (20140627204727)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to CreateUsers (20140627205310)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSong Load (0.2ms)[0m  SELECT "songs".* FROM "songs" LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mUPDATE "songs" SET "title" = 'title1b', "updated_at" = '2014-06-27 21:08:42.215976' WHERE "songs"."id" = 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" IN ('username1', 'username3', 'username4')
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSong Load (0.2ms)[0m  SELECT "songs".* FROM "songs" 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.7ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSongs (20140627204727)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to CreateUsers (20140627205310)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" IN ('username1', 'username3', 'username4')[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "song_users" WHERE "song_users"."song_id" = 1 AND "song_users"."user_id" = 2[0m
+  [1m[35mSQL (3.5ms)[0m  INSERT INTO "song_users" ("created_at", "song_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 27 Jun 2014 21:08:59 UTC +00:00], ["song_id", 1], ["updated_at", Fri, 27 Jun 2014 21:08:59 UTC +00:00], ["user_id", 3]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "song_users" ("created_at", "song_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 27 Jun 2014 21:08:59 UTC +00:00], ["song_id", 1], ["updated_at", Fri, 27 Jun 2014 21:08:59 UTC +00:00], ["user_id", 4]]
+  [1m[35m (0.1ms)[0m  UPDATE "songs" SET "title" = 'title1b', "updated_at" = '2014-06-27 21:08:59.675246' WHERE "songs"."id" = 1
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" 
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSongs (20140627204727)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateUsers (20140627205310)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSong Load (0.2ms)[0m  SELECT "songs".* FROM "songs" LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" IN ('username1', 'username3', 'username4')[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "song_users" WHERE "song_users"."song_id" = 1 AND "song_users"."user_id" = 2[0m
+  [1m[35mSQL (2.7ms)[0m  INSERT INTO "song_users" ("created_at", "song_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 27 Jun 2014 21:09:11 UTC +00:00], ["song_id", 1], ["updated_at", Fri, 27 Jun 2014 21:09:11 UTC +00:00], ["user_id", 3]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "song_users" ("created_at", "song_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 27 Jun 2014 21:09:11 UTC +00:00], ["song_id", 1], ["updated_at", Fri, 27 Jun 2014 21:09:11 UTC +00:00], ["user_id", 4]]
+  [1m[35m (0.2ms)[0m  UPDATE "songs" SET "title" = 'title1b', "updated_at" = '2014-06-27 21:09:11.539778' WHERE "songs"."id" = 1
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mSong Load (0.2ms)[0m  SELECT "songs".* FROM "songs" 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.6ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSongs (20140627204727)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateUsers (20140627205310)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" IN ('username1', 'username3', 'username4')[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "song_users" WHERE "song_users"."song_id" = 1 AND "song_users"."user_id" = 2[0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO "song_users" ("created_at", "song_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 27 Jun 2014 21:10:07 UTC +00:00], ["song_id", 1], ["updated_at", Fri, 27 Jun 2014 21:10:07 UTC +00:00], ["user_id", 3]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "song_users" ("created_at", "song_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 27 Jun 2014 21:10:07 UTC +00:00], ["song_id", 1], ["updated_at", Fri, 27 Jun 2014 21:10:07 UTC +00:00], ["user_id", 4]]
+  [1m[35m (0.1ms)[0m  UPDATE "songs" SET "title" = 'title1b', "updated_at" = '2014-06-27 21:10:07.577271' WHERE "songs"."id" = 1
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" 
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (3.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSongs (20140627204727)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateUsers (20140627205310)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateVersions (20140627211122)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "versions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "item_type" varchar(255) NOT NULL, "item_id" integer NOT NULL, "event" varchar(255) NOT NULL, "whodunnit" varchar(255), "object" text, "created_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_versions_on_item_type_and_item_id" ON "versions" ("item_type", "item_id")[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20140627211122')
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" IN ('username1', 'username3', 'username4')[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "song_users" WHERE "song_users"."song_id" = 1 AND "song_users"."user_id" = 2[0m
+  [1m[35mSQL (3.6ms)[0m  INSERT INTO "song_users" ("created_at", "song_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 27 Jun 2014 21:11:50 UTC +00:00], ["song_id", 1], ["updated_at", Fri, 27 Jun 2014 21:11:50 UTC +00:00], ["user_id", 3]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "song_users" ("created_at", "song_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 27 Jun 2014 21:11:50 UTC +00:00], ["song_id", 1], ["updated_at", Fri, 27 Jun 2014 21:11:50 UTC +00:00], ["user_id", 4]]
+  [1m[35m (0.1ms)[0m  UPDATE "songs" SET "title" = 'title1b', "updated_at" = '2014-06-27 21:11:50.187974' WHERE "songs"."id" = 1
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" 
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSongs (20140627204727)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateUsers (20140627205310)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to CreateVersions (20140627211122)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "versions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "item_type" varchar(255) NOT NULL, "item_id" integer NOT NULL, "event" varchar(255) NOT NULL, "whodunnit" varchar(255), "object" text, "created_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_versions_on_item_type_and_item_id" ON "versions" ("item_type", "item_id")[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20140627211122')
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" IN ('username1', 'username3', 'username4')[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "song_users" WHERE "song_users"."song_id" = 1 AND "song_users"."user_id" = 2[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "song_users" ("created_at", "song_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 27 Jun 2014 21:13:52 UTC +00:00], ["song_id", 1], ["updated_at", Fri, 27 Jun 2014 21:13:52 UTC +00:00], ["user_id", 3]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "versions" ("created_at", "event", "item_id", "item_type", "object", "whodunnit") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 27 Jun 2014 21:13:52 UTC +00:00], ["event", "create"], ["item_id", 3], ["item_type", "SongUser"], ["object", nil], ["whodunnit", nil]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "song_users" ("created_at", "song_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 27 Jun 2014 21:13:52 UTC +00:00], ["song_id", 1], ["updated_at", Fri, 27 Jun 2014 21:13:52 UTC +00:00], ["user_id", 4]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "versions" ("created_at", "event", "item_id", "item_type", "object", "whodunnit") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 27 Jun 2014 21:13:52 UTC +00:00], ["event", "create"], ["item_id", 4], ["item_type", "SongUser"], ["object", nil], ["whodunnit", nil]]
+  [1m[35m (0.2ms)[0m  UPDATE "songs" SET "title" = 'title1b', "updated_at" = '2014-06-27 21:13:52.339697' WHERE "songs"."id" = 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "versions" ("created_at", "event", "item_id", "item_type", "object", "whodunnit") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 27 Jun 2014 21:13:52 UTC +00:00], ["event", "update"], ["item_id", 1], ["item_type", "Song"], ["object", "---\ntitle: title1\ncreated_at: 2014-06-27 21:13:52.000000000 Z\nupdated_at: 2014-06-27 21:13:52.000000000 Z\nid: 1\n"], ["whodunnit", nil]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSongs (20140627204727)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateUsers (20140627205310)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateVersions (20140627211122)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "versions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "item_type" varchar(255) NOT NULL, "item_id" integer NOT NULL, "event" varchar(255) NOT NULL, "whodunnit" varchar(255), "object" text, "created_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_versions_on_item_type_and_item_id" ON "versions" ("item_type", "item_id")[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20140627211122')
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSong Load (0.2ms)[0m  SELECT "songs".* FROM "songs" LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" IN ('username1', 'username3', 'username4')[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "song_users" WHERE "song_users"."song_id" = 1 AND "song_users"."user_id" = 2[0m
+  [1m[35mSQL (2.7ms)[0m  INSERT INTO "song_users" ("created_at", "song_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 27 Jun 2014 21:15:11 UTC +00:00], ["song_id", 1], ["updated_at", Fri, 27 Jun 2014 21:15:11 UTC +00:00], ["user_id", 3]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "versions" ("created_at", "event", "item_id", "item_type", "object", "whodunnit") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 27 Jun 2014 21:15:11 UTC +00:00], ["event", "create"], ["item_id", 3], ["item_type", "SongUser"], ["object", nil], ["whodunnit", nil]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "song_users" ("created_at", "song_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 27 Jun 2014 21:15:11 UTC +00:00], ["song_id", 1], ["updated_at", Fri, 27 Jun 2014 21:15:11 UTC +00:00], ["user_id", 4]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "versions" ("created_at", "event", "item_id", "item_type", "object", "whodunnit") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 27 Jun 2014 21:15:11 UTC +00:00], ["event", "create"], ["item_id", 4], ["item_type", "SongUser"], ["object", nil], ["whodunnit", nil]]
+  [1m[35m (0.1ms)[0m  UPDATE "songs" SET "title" = 'title1b', "updated_at" = '2014-06-27 21:15:11.492485' WHERE "songs"."id" = 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "versions" ("created_at", "event", "item_id", "item_type", "object", "whodunnit") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 27 Jun 2014 21:15:11 UTC +00:00], ["event", "update"], ["item_id", 1], ["item_type", "Song"], ["object", "---\ntitle: title1\ncreated_at: 2014-06-27 21:15:11.000000000 Z\nupdated_at: 2014-06-27 21:15:11.000000000 Z\nid: 1\n"], ["whodunnit", nil]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSongs (20140627204727)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateUsers (20140627205310)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateVersions (20140627211122)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "versions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "item_type" varchar(255) NOT NULL, "item_id" integer NOT NULL, "event" varchar(255) NOT NULL, "whodunnit" varchar(255), "object" text, "created_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mCREATE INDEX "index_versions_on_item_type_and_item_id" ON "versions" ("item_type", "item_id")[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20140627211122')
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSong Load (0.2ms)[0m  SELECT "songs".* FROM "songs" LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" IN ('username1', 'username3', 'username4')[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.8ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSongs (20140627204727)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateUsers (20140627205310)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateVersions (20140627211122)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "versions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "item_type" varchar(255) NOT NULL, "item_id" integer NOT NULL, "event" varchar(255) NOT NULL, "whodunnit" varchar(255), "object" text, "created_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_versions_on_item_type_and_item_id" ON "versions" ("item_type", "item_id")[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20140627211122')
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" IN ('username1', 'username3', 'username4')[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+  [1m[36mSongUser Load (0.1ms)[0m  [1mSELECT "song_users".* FROM "song_users" WHERE "song_users"."song_id" = 1 AND "song_users"."user_id" = 2[0m
+  [1m[35mSQL (2.5ms)[0m  DELETE FROM "song_users" WHERE "song_users"."id" = ?  [["id", 2]]
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "versions" ("created_at", "event", "item_id", "item_type", "object", "whodunnit") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 27 Jun 2014 21:21:22 UTC +00:00], ["event", "destroy"], ["item_id", 2], ["item_type", "SongUser"], ["object", "---\nsong_id: 1\nuser_id: 2\ncreated_at: 2014-06-27 21:21:22.000000000 Z\nupdated_at: 2014-06-27 21:21:22.000000000 Z\nid: 2\n"], ["whodunnit", nil]]
+  [1m[35mPaperTrail::Version Load (0.1ms)[0m  SELECT "versions".* FROM "versions" WHERE "versions"."item_id" = 2 AND "versions"."item_type" = 'SongUser' ORDER BY "versions"."created_at" ASC, "versions"."id" ASC
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "song_users" ("created_at", "song_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 27 Jun 2014 21:21:22 UTC +00:00], ["song_id", 1], ["updated_at", Fri, 27 Jun 2014 21:21:22 UTC +00:00], ["user_id", 3]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "versions" ("created_at", "event", "item_id", "item_type", "object", "whodunnit") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jun 2014 21:21:22 UTC +00:00], ["event", "create"], ["item_id", 3], ["item_type", "SongUser"], ["object", nil], ["whodunnit", nil]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "song_users" ("created_at", "song_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 27 Jun 2014 21:21:22 UTC +00:00], ["song_id", 1], ["updated_at", Fri, 27 Jun 2014 21:21:22 UTC +00:00], ["user_id", 4]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "versions" ("created_at", "event", "item_id", "item_type", "object", "whodunnit") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jun 2014 21:21:22 UTC +00:00], ["event", "create"], ["item_id", 4], ["item_type", "SongUser"], ["object", nil], ["whodunnit", nil]]
+  [1m[36m (0.1ms)[0m  [1mUPDATE "songs" SET "title" = 'title1b', "updated_at" = '2014-06-27 21:21:22.563480' WHERE "songs"."id" = 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "versions" ("created_at", "event", "item_id", "item_type", "object", "whodunnit") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jun 2014 21:21:22 UTC +00:00], ["event", "update"], ["item_id", 1], ["item_type", "Song"], ["object", "---\ntitle: title1\ncreated_at: 2014-06-27 21:21:22.000000000 Z\nupdated_at: 2014-06-27 21:21:22.000000000 Z\nid: 1\n"], ["whodunnit", nil]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSong Load (0.2ms)[0m  SELECT "songs".* FROM "songs" 
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (3.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSongs (20140627204727)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateUsers (20140627205310)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateActivities (20140627213046)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "activities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "trackable_id" integer, "trackable_type" varchar(255), "owner_id" integer, "owner_type" varchar(255), "key" varchar(255), "parameters" text, "recipient_id" integer, "recipient_type" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_activities_on_trackable_id_and_trackable_type" ON "activities" ("trackable_id", "trackable_type")[0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_activities_on_owner_id_and_owner_type" ON "activities" ("owner_id", "owner_type")
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_activities_on_recipient_id_and_recipient_type" ON "activities" ("recipient_id", "recipient_type")[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20140627213046')
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSongs (20140627204727)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateUsers (20140627205310)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateActivities (20140627213046)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "activities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "trackable_id" integer, "trackable_type" varchar(255), "owner_id" integer, "owner_type" varchar(255), "key" varchar(255), "parameters" text, "recipient_id" integer, "recipient_type" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_activities_on_trackable_id_and_trackable_type" ON "activities" ("trackable_id", "trackable_type")[0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_activities_on_owner_id_and_owner_type" ON "activities" ("owner_id", "owner_type")
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_activities_on_recipient_id_and_recipient_type" ON "activities" ("recipient_id", "recipient_type")[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20140627213046')
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.6ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSongs (20140627204727)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateUsers (20140627205310)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateActivities (20140627213046)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "activities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "trackable_id" integer, "trackable_type" varchar(255), "owner_id" integer, "owner_type" varchar(255), "key" varchar(255), "parameters" text, "recipient_id" integer, "recipient_type" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_activities_on_trackable_id_and_trackable_type" ON "activities" ("trackable_id", "trackable_type")[0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_activities_on_owner_id_and_owner_type" ON "activities" ("owner_id", "owner_type")
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_activities_on_recipient_id_and_recipient_type" ON "activities" ("recipient_id", "recipient_type")[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20140627213046')
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateSongs (20140627204727)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627204727')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateUsers (20140627205310)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205310')[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to CreateSongUsers (20140627205330)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "song_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140627205330')[0m
+  [1m[35m (1.0ms)[0m  commit transaction
+Migrating to CreateActivities (20140627213046)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "activities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "trackable_id" integer, "trackable_type" varchar(255), "owner_id" integer, "owner_type" varchar(255), "key" varchar(255), "parameters" text, "recipient_id" integer, "recipient_type" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_activities_on_trackable_id_and_trackable_type" ON "activities" ("trackable_id", "trackable_type")[0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_activities_on_owner_id_and_owner_type" ON "activities" ("owner_id", "owner_type")
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_activities_on_recipient_id_and_recipient_type" ON "activities" ("recipient_id", "recipient_type")[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20140627213046')
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" IN ('username1', 'username3', 'username4')[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1
+  [1m[36mSongUser Load (0.1ms)[0m  [1mSELECT "song_users".* FROM "song_users" WHERE "song_users"."song_id" = 1 AND "song_users"."user_id" = 2[0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO "activities" ("created_at", "key", "owner_id", "owner_type", "parameters", "recipient_id", "recipient_type", "trackable_id", "trackable_type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jun 2014 21:33:06 UTC +00:00], ["key", "song_user.destroy"], ["owner_id", nil], ["owner_type", nil], ["parameters", "--- {}\n"], ["recipient_id", nil], ["recipient_type", nil], ["trackable_id", 2], ["trackable_type", "SongUser"], ["updated_at", Fri, 27 Jun 2014 21:33:06 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "song_users" WHERE "song_users"."id" = ?[0m  [["id", 2]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "song_users" ("created_at", "song_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 27 Jun 2014 21:33:06 UTC +00:00], ["song_id", 1], ["updated_at", Fri, 27 Jun 2014 21:33:06 UTC +00:00], ["user_id", 3]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "activities" ("created_at", "key", "owner_id", "owner_type", "parameters", "recipient_id", "recipient_type", "trackable_id", "trackable_type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 27 Jun 2014 21:33:06 UTC +00:00], ["key", "song_user.create"], ["owner_id", nil], ["owner_type", nil], ["parameters", "--- {}\n"], ["recipient_id", nil], ["recipient_type", nil], ["trackable_id", 3], ["trackable_type", "SongUser"], ["updated_at", Fri, 27 Jun 2014 21:33:06 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "song_users" ("created_at", "song_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 27 Jun 2014 21:33:06 UTC +00:00], ["song_id", 1], ["updated_at", Fri, 27 Jun 2014 21:33:06 UTC +00:00], ["user_id", 4]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "activities" ("created_at", "key", "owner_id", "owner_type", "parameters", "recipient_id", "recipient_type", "trackable_id", "trackable_type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 27 Jun 2014 21:33:06 UTC +00:00], ["key", "song_user.create"], ["owner_id", nil], ["owner_type", nil], ["parameters", "--- {}\n"], ["recipient_id", nil], ["recipient_type", nil], ["trackable_id", 4], ["trackable_type", "SongUser"], ["updated_at", Fri, 27 Jun 2014 21:33:06 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  UPDATE "songs" SET "title" = 'title1b', "updated_at" = '2014-06-27 21:33:06.361350' WHERE "songs"."id" = 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "activities" ("created_at", "key", "owner_id", "owner_type", "parameters", "recipient_id", "recipient_type", "trackable_id", "trackable_type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 27 Jun 2014 21:33:06 UTC +00:00], ["key", "song.update"], ["owner_id", nil], ["owner_type", nil], ["parameters", "--- {}\n"], ["recipient_id", nil], ["recipient_type", nil], ["trackable_id", 1], ["trackable_type", "Song"], ["updated_at", Fri, 27 Jun 2014 21:33:06 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" [0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "song_users" ON "users"."id" = "song_users"."user_id" WHERE "song_users"."song_id" = 1

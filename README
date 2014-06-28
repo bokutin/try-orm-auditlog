@@ -1,0 +1,31 @@
+ruby
+    paper_trail
+	ruby-paper_trail/script/try_audit.rb
+	% rails runner script/try_audit.rb
+
+	テーブルはversionsのみが増える。
+	ここにjsonが記録されてく
+    public_activity
+	ruby-public_activity/script/try_audit.rb
+	% rails runner script/try_audit.rb
+
+	テーブルはactivitiesのみが増える。
+
+python
+    django-reversion
+	python-django-reversion/myapps/management/commands/try_audit.py
+	% python manage.py try_audit
+
+	delete()自体は記録されないようだ
+	ただ最後のリビジョンから戻すことは出来るようだ
+    sqlalchemy
+	http://docs.sqlalchemy.org/en/latest/orm/examples.html#module-examples.versioned_history
+	Versioning Objects
+	    Versioning with a History Table
+		history_meta.py - Versioned mixin class and other utilities.
+		test_versioning.py - Unit tests illustrating usage of the history_meta.py module functions.
+	    Versioning using Temporal Rows
+		versioned_rows.py - Illustrates a method to intercept changes on objects, turning an UPDATE statement on a single row into an INSERT statement, so that a new row is inserted with the new data, keeping the old row intact.
+		versioned_map.py - A variant of the versioned_rows example. Here we store a dictionary of key/value pairs, storing the k/v’s in a “vertical” fashion where each key gets a row. The value is split out into two separate datatypes, string and int - the range of datatype storage can be adjusted for individual needs.
+
+# vim: set=4 :

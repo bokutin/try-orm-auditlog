@@ -1,0 +1,9 @@
+ruby
+    paper_trail
+    public_activity
+
+python
+    django
+	django-reversion
+    sqlalchemy
+	http://docs.sqlalchemy.org/en/latest/orm/examples.html#module-examples.versioned_history
